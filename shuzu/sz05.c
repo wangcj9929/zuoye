@@ -1,0 +1,24 @@
+/*
+    把数组中的全部元素复制到另一个数组中
+*/
+#include <stdio.h>
+
+int main(void)
+
+{
+	int i;
+	int a[5] = {17, 23, 36,};
+	int b[5];
+
+
+	for (i = 0; i < 5; i++)
+		b[i] = a[i];// 其作用是把a中全部元素的值依次赋给b中的元素
+
+
+
+	puts("  a   b    ");
+	puts("--------------");
+	for (i = 0; i < 5; i++)
+		printf("%4d%4d\n", a[i], b[i]);
+	return 0;
+}

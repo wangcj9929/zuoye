@@ -1,5 +1,5 @@
 /*
-    递增显示从0到输入的正整数为止的各个整数（for）
+    显示输入的整数值以下的偶数
 */
 #include <stdio.h>
 int main(void)
@@ -10,10 +10,11 @@ int main(void)
 	printf("请输入一个整数：");
 	scanf("%d", &no);
 
-	for (i = 0; i <= no; i++)
-		printf("%d ", i);
+	for (i = 2; i <= no; i += 2); {
+		printf("%d\n", i);
+	}
 
 	putchar('\n');
-
+	
 	return 0;
 }
